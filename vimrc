@@ -21,18 +21,11 @@ set smartindent
 set showmatch " show matched bracket
 
 """"""""""""""""""""""""""""""""""""
-" To run script
+" To run python script
 """"""""""""""""""""""""""""""""""""
-map <F5> :Autopep8<CR> :w<CR> :call RunPython()<CR>
-function RunPython()
-	let mp = &makeprg
-	let ef = &errorformat
-	let exeFile = expand("%:t")
-	setlocal makeprg=python\ -u
-	set efm=%C\ %.%#,%A\ \ File\ \"%f\"\\,\ line \%l%.%#,%Z%[%^\ ]%\\@=%m
-	silent make %
-	copen
-	let &makeprg
-	let &errorformat = ef
-endfunction
+nnoremap <F9> :echo system('python2 "' . expand('%') . '"')<cr>
+nnoremap <F10> :echo system('python3 "' . expand('%') . '"')<cr>
 
+""""""""""""""""""""""""""""""""""""
+" Plugin 
+""""""""""""""""""""""""""""""""""""
