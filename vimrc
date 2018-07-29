@@ -3,6 +3,7 @@
 """"""""""""""""""""""""""""""""""
 set nocompatible
 set number
+set fileformat=unix
 syntax enable
 syntax on
 
@@ -16,7 +17,8 @@ set shiftwidth=4 " the number of space characters inserted for indentation
 set expandtab " To insert space characters whenever the tab key is pressed
 set autoindent
 set cindent
-
+set smartindent
+set showmatch " show matched bracket
 
 """"""""""""""""""""""""""""""""""""
 " To run script
