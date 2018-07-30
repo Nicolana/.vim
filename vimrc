@@ -29,7 +29,7 @@ set fileencoding=chinese
 set fileencodings=ucs-bom,utf-8,chinese
 
 set langmenu=zh_CN.UTF-8
-
+language message zh_CN.UTF-8
 
 """"""""""""""""""""""""""""""""""""
 " To Compile or Run Code
