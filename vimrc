@@ -57,3 +57,8 @@ endfunc
 " Plugin 
 """"""""""""""""""""""""""""""""""""
 filetype plugin indent on
+
+if has('mouse')
+	set mouse=a
+endif
+
