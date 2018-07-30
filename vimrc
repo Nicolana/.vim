@@ -21,6 +21,17 @@ set smartindent
 set showmatch " show matched bracket
 
 """"""""""""""""""""""""""""""""""""
+" Encoding
+""""""""""""""""""""""""""""""""""""
+set encoding=utf-8
+set termencoding=utf-8
+set fileencoding=chinese
+set fileencodings=ucs-bom,utf-8,chinese
+
+set langmenu=zh_CN.UTF-8
+
+
+""""""""""""""""""""""""""""""""""""
 " To Compile or Run Code
 """"""""""""""""""""""""""""""""""""
 "nnoremap <F9> :echo system('python2 "' . expand('%') . '"')<cr>
