@@ -24,9 +24,8 @@ set showmatch " show matched bracket
 " Encoding
 """"""""""""""""""""""""""""""""""""
 set encoding=utf-8
-set termencoding=utf-8
-set fileencoding=chinese
-set fileencodings=ucs-bom,utf-8,chinese
+set termencoding=gb18030
+set fileencodings=ucs-bom,utf-8,cp936,gb18030,latin1
 
 set langmenu=zh_CN.UTF-8
 language message zh_CN.UTF-8
