@@ -51,7 +51,14 @@ endfunc
 " Plugin 
 """"""""""""""""""""""""""""""""""""
 filetype plugin indent on
-
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Lokaltog/vim-powerline'
+Plugin 'L9'
+call vundle#end()
+filetype plugin indent on
 if has('mouse')
 	set mouse=a
 endif
